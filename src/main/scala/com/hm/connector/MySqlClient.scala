@@ -110,7 +110,7 @@ object MySqlClient {
   import scala.concurrent.duration._
   // ...now with system in current scope:
   val system=ActorSystem("on-spray-can")
-  system.scheduler.schedule(1 seconds, 1 seconds) {
+  system.scheduler.schedule(5 seconds, 5 seconds) {
     MySqlClient.statement.executeBatch()
     MySqlClient.getConnection.commit()
   }
