@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="default"
+		module="shoppingapi_2.11"
+		revision="1.0"
+		conf="compile-internal"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
+		date="20170224123302"/>
+	<dependencies>
+		<module organisation="mysql" name="mysql-connector-java">
+			<revision name="5.1.25" status="release" pubdate="20150508162540" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://dev.mysql.com/doc/connector-j/en/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="15">
+				<license name="The GNU General Public License, Version 2" url="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html"/>
+				<metadata-artifact status="no" details="" size="2538" time="0" location="/home/rahul/.ivy2/cache/mysql/mysql-connector-java/ivy-5.1.25.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/mysql/mysql-connector-java/5.1.25/mysql-connector-java-5.1.25.pom"/>
+				<caller organisation="default" name="shoppingapi_2.11" conf="optional, compile, provided, compile-internal" rev="5.1.25" rev-constraint-default="5.1.25" rev-constraint-dynamic="5.1.25" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="mysql-connector-java" type="jar" ext="jar" status="no" details="" size="848399" time="0" location="/home/rahul/.ivy2/cache/mysql/mysql-connector-java/jars/mysql-connector-java-5.1.25.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/mysql/mysql-connector-java/5.1.25/mysql-connector-java-5.1.25.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe.akka" name="akka-actor_2.11">
+			<revision name="2.3.9" status="release" pubdate="20150120114810" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://akka.io/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="13">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2792" time="0" location="/home/rahul/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/ivy-2.3.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.11/2.3.9/akka-actor_2.11-2.3.9.pom"/>
+				<caller organisation="default" name="shoppingapi_2.11" conf="optional, compile, provided, compile-internal" rev="2.3.9" rev-constraint-default="2.3.9" rev-constraint-dynamic="2.3.9" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="akka-actor_2.11" type="jar" ext="jar" status="no" details="" size="2571077" time="0" location="/home/rahul/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.3.9.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/akka/akka-actor_2.11/2.3.9/akka-actor_2.11-2.3.9.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe" name="config">
+			<revision name="1.2.1" status="release" pubdate="20140502202416" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/typesafehub/config" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="14">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2878" time="0" location="/home/rahul/.ivy2/cache/com.typesafe/config/ivy-1.2.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/config/1.2.1/config-1.2.1.pom"/>
+				<caller organisation="com.typesafe.akka" name="akka-actor_2.11" conf="default, compile, runtime, master" rev="1.2.1" rev-constraint-default="1.2.1" rev-constraint-dynamic="1.2.1" callerrev="2.3.9"/>
+				<artifacts>
+					<artifact name="config" type="bundle" ext="jar" status="no" details="" size="219554" time="0" location="/home/rahul/.ivy2/cache/com.typesafe/config/bundles/config-1.2.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/config/1.2.1/config-1.2.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.spray" name="spray-json_2.11">
+			<revision name="1.3.3" status="release" pubdate="20161229153802" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/spray/spray-json" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="12">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3081" time="0" location="/home/rahul/.ivy2/cache/io.spray/spray-json_2.11/ivy-1.3.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/spray/spray-json_2.11/1.3.3/spray-json_2.11-1.3.3.pom"/>
+				<caller organisation="default" name="shoppingapi_2.11" conf="optional, compile, provided, compile-internal" rev="1.3.3" rev-constraint-default="1.3.3" rev-constraint-dynamic="1.3.3" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="spray-json_2.11" type="bundle" ext="jar" status="no" details="" size="293513" time="0" location="/home/rahul/.ivy2/cache/io.spray/spray-json_2.11/bundles/spray-json_2.11-1.3.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/spray/spray-json_2.11/1.3.3/spray-json_2.11-1.3.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.spray" name="spray-routing_2.11">
+			<revision name="1.3.3" status="release" pubdate="20150324191908" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spray.io" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="7">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3750" time="0" location="/home/rahul/.ivy2/cache/io.spray/spray-routing_2.11/ivy-1.3.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/spray/spray-routing_2.11/1.3.3/spray-routing_2.11-1.3.3.pom"/>
+				<caller organisation="default" name="shoppingapi_2.11" conf="optional, compile, provided, compile-internal" rev="1.3.3" rev-constraint-default="1.3.3" rev-constraint-dynamic="1.3.3" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="spray-routing_2.11" type="bundle" ext="jar" status="no" details="" size="1064515" time="0" location="/home/rahul/.ivy2/cache/io.spray/spray-routing_2.11/bundles/spray-routing_2.11-1.3.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/spray/spray-routing_2.11/1.3.3/spray-routing_2.11-1.3.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.chuusai" name="shapeless_2.11">
+			<revision name="1.2.4" status="release" pubdate="20140417160056" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/milessabin/shapeless" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="11">
+				<license name="Apache License" url="http://www.apache.org/licenses/"/>
+				<metadata-artifact status="no" details="" size="2772" time="0" location="/home/rahul/.ivy2/cache/com.chuusai/shapeless_2.11/ivy-1.2.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/chuusai/shapeless_2.11/1.2.4/shapeless_2.11-1.2.4.pom"/>
+				<caller organisation="io.spray" name="spray-routing_2.11" conf="default, compile, runtime, master" rev="1.2.4" rev-constraint-default="1.2.4" rev-constraint-dynamic="1.2.4" callerrev="1.3.3"/>
+				<artifacts>
+					<artifact name="shapeless_2.11" type="jar" ext="jar" status="no" details="" size="1259355" time="0" location="/home/rahul/.ivy2/cache/com.chuusai/shapeless_2.11/jars/shapeless_2.11-1.2.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/chuusai/shapeless_2.11/1.2.4/shapeless_2.11-1.2.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.spray" name="spray-httpx_2.11">
+			<revision name="1.3.3" status="release" pubdate="20150324192143" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spray.io" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="8">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="4640" time="0" location="/home/rahul/.ivy2/cache/io.spray/spray-httpx_2.11/ivy-1.3.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/spray/spray-httpx_2.11/1.3.3/spray-httpx_2.11-1.3.3.pom"/>
+				<caller organisation="io.spray" name="spray-routing_2.11" conf="default, compile, runtime, master" rev="1.3.3" rev-constraint-default="1.3.3" rev-constraint-dynamic="1.3.3" callerrev="1.3.3"/>
+				<artifacts>
+					<artifact name="spray-httpx_2.11" type="bundle" ext="jar" status="no" details="" size="437070" time="0" location="/home/rahul/.ivy2/cache/io.spray/spray-httpx_2.11/bundles/spray-httpx_2.11-1.3.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/spray/spray-httpx_2.11/1.3.3/spray-httpx_2.11-1.3.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.jvnet.mimepull" name="mimepull">
+			<revision name="1.9.5" status="release" pubdate="20150313164011" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://mimepull.java.net" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="10">
+				<license name="CDDL 1.1" url="https://glassfish.java.net/public/CDDL+GPL_1_1.html"/>
+				<license name="GPL2 w/ CPE" url="https://glassfish.java.net/public/CDDL+GPL_1_1.html"/>
+				<metadata-artifact status="no" details="" size="3953" time="0" location="/home/rahul/.ivy2/cache/org.jvnet.mimepull/mimepull/ivy-1.9.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/jvnet/mimepull/mimepull/1.9.5/mimepull-1.9.5.pom"/>
+				<caller organisation="io.spray" name="spray-httpx_2.11" conf="compile, runtime" rev="1.9.5" rev-constraint-default="1.9.5" rev-constraint-dynamic="1.9.5" callerrev="1.3.3"/>
+				<artifacts>
+					<artifact name="mimepull" type="jar" ext="jar" status="no" details="" size="63621" time="0" location="/home/rahul/.ivy2/cache/org.jvnet.mimepull/mimepull/jars/mimepull-1.9.5.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/jvnet/mimepull/mimepull/1.9.5/mimepull-1.9.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang.modules" name="scala-xml_2.11">
+			<revision name="1.0.3" status="release" pubdate="20141205014814" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="9">
+				<license name="BSD 3-clause" url="http://opensource.org/licenses/BSD-3-Clause"/>
+				<metadata-artifact status="no" details="" size="3137" time="0" location="/home/rahul/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/ivy-1.0.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.3/scala-xml_2.11-1.0.3.pom"/>
+				<caller organisation="io.spray" name="spray-httpx_2.11" conf="compile, runtime" rev="1.0.3" rev-constraint-default="1.0.3" rev-constraint-dynamic="1.0.3" callerrev="1.3.3"/>
+				<artifacts>
+					<artifact name="scala-xml_2.11" type="bundle" ext="jar" status="no" details="" size="647893" time="0" location="/home/rahul/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.3/scala-xml_2.11-1.0.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.spray" name="spray-can_2.11">
+			<revision name="1.3.3" status="release" pubdate="20150324191806" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spray.io" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="1">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3554" time="0" location="/home/rahul/.ivy2/cache/io.spray/spray-can_2.11/ivy-1.3.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/spray/spray-can_2.11/1.3.3/spray-can_2.11-1.3.3.pom"/>
+				<caller organisation="default" name="shoppingapi_2.11" conf="optional, compile, provided, compile-internal" rev="1.3.3" rev-constraint-default="1.3.3" rev-constraint-dynamic="1.3.3" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="spray-can_2.11" type="bundle" ext="jar" status="no" details="" size="720710" time="0" location="/home/rahul/.ivy2/cache/io.spray/spray-can_2.11/bundles/spray-can_2.11-1.3.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/spray/spray-can_2.11/1.3.3/spray-can_2.11-1.3.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.spray" name="spray-io_2.11">
+			<revision name="1.3.3" status="release" pubdate="20150324192250" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spray.io" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="2">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3310" time="0" location="/home/rahul/.ivy2/cache/io.spray/spray-io_2.11/ivy-1.3.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/spray/spray-io_2.11/1.3.3/spray-io_2.11-1.3.3.pom"/>
+				<caller organisation="io.spray" name="spray-can_2.11" conf="default, compile, runtime, master" rev="1.3.3" rev-constraint-default="1.3.3" rev-constraint-dynamic="1.3.3" callerrev="1.3.3"/>
+				<artifacts>
+					<artifact name="spray-io_2.11" type="bundle" ext="jar" status="no" details="" size="189178" time="0" location="/home/rahul/.ivy2/cache/io.spray/spray-io_2.11/bundles/spray-io_2.11-1.3.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/spray/spray-io_2.11/1.3.3/spray-io_2.11-1.3.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.spray" name="spray-http_2.11">
+			<revision name="1.3.3" status="release" pubdate="20150324192109" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spray.io" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="4">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3296" time="0" location="/home/rahul/.ivy2/cache/io.spray/spray-http_2.11/ivy-1.3.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/spray/spray-http_2.11/1.3.3/spray-http_2.11-1.3.3.pom"/>
+				<caller organisation="io.spray" name="spray-io_2.11" conf="compile, runtime" rev="1.3.3" rev-constraint-default="1.3.3" rev-constraint-dynamic="1.3.3" callerrev="1.3.3"/>
+				<caller organisation="io.spray" name="spray-can_2.11" conf="default, compile, runtime, master" rev="1.3.3" rev-constraint-default="1.3.3" rev-constraint-dynamic="1.3.3" callerrev="1.3.3"/>
+				<caller organisation="io.spray" name="spray-routing_2.11" conf="default, compile, runtime, master" rev="1.3.3" rev-constraint-default="1.3.3" rev-constraint-dynamic="1.3.3" callerrev="1.3.3"/>
+				<caller organisation="io.spray" name="spray-httpx_2.11" conf="compile, runtime" rev="1.3.3" rev-constraint-default="1.3.3" rev-constraint-dynamic="1.3.3" callerrev="1.3.3"/>
+				<artifacts>
+					<artifact name="spray-http_2.11" type="bundle" ext="jar" status="no" details="" size="1502842" time="0" location="/home/rahul/.ivy2/cache/io.spray/spray-http_2.11/bundles/spray-http_2.11-1.3.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/spray/spray-http_2.11/1.3.3/spray-http_2.11-1.3.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.parboiled" name="parboiled-scala_2.11">
+			<revision name="1.1.7" status="release" pubdate="20150209214151" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://parboiled.org" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="5">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3094" time="0" location="/home/rahul/.ivy2/cache/org.parboiled/parboiled-scala_2.11/ivy-1.1.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/parboiled/parboiled-scala_2.11/1.1.7/parboiled-scala_2.11-1.1.7.pom"/>
+				<caller organisation="io.spray" name="spray-http_2.11" conf="compile, runtime" rev="1.1.7" rev-constraint-default="1.1.7" rev-constraint-dynamic="1.1.7" callerrev="1.3.3"/>
+				<artifacts>
+					<artifact name="parboiled-scala_2.11" type="jar" ext="jar" status="no" details="" size="233224" time="0" location="/home/rahul/.ivy2/cache/org.parboiled/parboiled-scala_2.11/jars/parboiled-scala_2.11-1.1.7.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/parboiled/parboiled-scala_2.11/1.1.7/parboiled-scala_2.11-1.1.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.parboiled" name="parboiled-core">
+			<revision name="1.1.7" status="release" pubdate="20150209214230" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://parboiled.org" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="6">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2789" time="0" location="/home/rahul/.ivy2/cache/org.parboiled/parboiled-core/ivy-1.1.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/parboiled/parboiled-core/1.1.7/parboiled-core-1.1.7.pom"/>
+				<caller organisation="org.parboiled" name="parboiled-scala_2.11" conf="compile, runtime" rev="1.1.7" rev-constraint-default="1.1.7" rev-constraint-dynamic="1.1.7" callerrev="1.1.7"/>
+				<artifacts>
+					<artifact name="parboiled-core" type="jar" ext="jar" status="no" details="" size="186607" time="0" location="/home/rahul/.ivy2/cache/org.parboiled/parboiled-core/jars/parboiled-core-1.1.7.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/parboiled/parboiled-core/1.1.7/parboiled-core-1.1.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.spray" name="spray-util_2.11">
+			<revision name="1.3.3" status="release" pubdate="20150324191829" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://spray.io" downloaded="false" searched="false" default="false" conf="compile, runtime, compile(*), runtime(*), master(compile), master" position="3">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3283" time="0" location="/home/rahul/.ivy2/cache/io.spray/spray-util_2.11/ivy-1.3.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/spray/spray-util_2.11/1.3.3/spray-util_2.11-1.3.3.pom"/>
+				<caller organisation="io.spray" name="spray-http_2.11" conf="compile, runtime" rev="1.3.3" rev-constraint-default="1.3.3" rev-constraint-dynamic="1.3.3" callerrev="1.3.3"/>
+				<caller organisation="io.spray" name="spray-io_2.11" conf="compile, runtime" rev="1.3.3" rev-constraint-default="1.3.3" rev-constraint-dynamic="1.3.3" callerrev="1.3.3"/>
+				<caller organisation="io.spray" name="spray-can_2.11" conf="default, compile, runtime, master" rev="1.3.3" rev-constraint-default="1.3.3" rev-constraint-dynamic="1.3.3" callerrev="1.3.3"/>
+				<caller organisation="io.spray" name="spray-routing_2.11" conf="default, compile, runtime, master" rev="1.3.3" rev-constraint-default="1.3.3" rev-constraint-dynamic="1.3.3" callerrev="1.3.3"/>
+				<caller organisation="io.spray" name="spray-httpx_2.11" conf="compile, runtime" rev="1.3.3" rev-constraint-default="1.3.3" rev-constraint-dynamic="1.3.3" callerrev="1.3.3"/>
+				<artifacts>
+					<artifact name="spray-util_2.11" type="bundle" ext="jar" status="no" details="" size="128702" time="0" location="/home/rahul/.ivy2/cache/io.spray/spray-util_2.11/bundles/spray-util_2.11-1.3.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/spray/spray-util_2.11/1.3.3/spray-util_2.11-1.3.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.11.6" status="release" pubdate="20150226063105" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.11.6/" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, compile(*), runtime, runtime(*), master(compile), master" position="0">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2653" time="0" location="/home/rahul/.ivy2/cache/org.scala-lang/scala-library/ivy-2.11.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.6/scala-library-2.11.6.pom"/>
+				<caller organisation="com.chuusai" name="shapeless_2.11" conf="compile, runtime" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.6" callerrev="1.2.4"/>
+				<caller organisation="io.spray" name="spray-http_2.11" conf="compile, runtime" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.6" callerrev="1.3.3"/>
+				<caller organisation="org.parboiled" name="parboiled-scala_2.11" conf="compile, runtime" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.6" callerrev="1.1.7"/>
+				<caller organisation="com.typesafe.akka" name="akka-actor_2.11" conf="default, compile, runtime, master" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.6" callerrev="2.3.9"/>
+				<caller organisation="io.spray" name="spray-io_2.11" conf="compile, runtime" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.6" callerrev="1.3.3"/>
+				<caller organisation="io.spray" name="spray-util_2.11" conf="compile, runtime" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.6" callerrev="1.3.3"/>
+				<caller organisation="org.scala-lang.modules" name="scala-xml_2.11" conf="compile, runtime" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.6" callerrev="1.0.3"/>
+				<caller organisation="io.spray" name="spray-can_2.11" conf="default, compile, runtime, master" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.6" callerrev="1.3.3"/>
+				<caller organisation="io.spray" name="spray-json_2.11" conf="default, compile, runtime, master" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.6" callerrev="1.3.3"/>
+				<caller organisation="default" name="shoppingapi_2.11" conf="optional, compile, provided, compile-internal" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.6" callerrev="1.0"/>
+				<caller organisation="io.spray" name="spray-routing_2.11" conf="default, compile, runtime, master" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.6" callerrev="1.3.3"/>
+				<caller organisation="io.spray" name="spray-httpx_2.11" conf="compile, runtime" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.6" callerrev="1.3.3"/>
+				<artifacts>
+					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="5564007" time="0" location="/home/rahul/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.6.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.6/scala-library-2.11.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>
