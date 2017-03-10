@@ -2,9 +2,12 @@ package com.hm.connector
 
 import java.sql.{Connection, DriverManager, PreparedStatement, ResultSet}
 import java.util.concurrent.{ScheduledThreadPoolExecutor, TimeUnit}
+
 import scala.collection.mutable.ArrayBuffer
 import akka.actor.ActorSystem
+
 import scala.language.postfixOps
+import com.hm.routes.Handlers
 /**
   * Created by rahul on 27/2/17.
   */
@@ -42,8 +45,9 @@ object MySqlClient {
     "grp" -> Array("id")
 
   )
-
-  val statement=MySqlClient.getConnection.prepareStatement("update user set cnt = cnt+1 where id = ?")
+//insert into counter(time,totalcount) values(?,?) on duplicate key update counter=counter+?
+  val statement = MySqlClient.getConnection.prepareStatement("update user set counter = counter+? where id = ?")
+  val statement1 = MySqlClient.getConnection.prepareStatement("insert into counter(time,totalcount) values(?,?) on duplicate key update totalcount=totalcount+?")
 
   def closeConnection() = conn.close()
 
@@ -106,14 +110,16 @@ object MySqlClient {
     }
   }
 
-  import system.dispatcher
+
+ /* import system.dispatcher
   import scala.concurrent.duration._
   // ...now with system in current scope:
   val system=ActorSystem("on-spray-can")
   system.scheduler.schedule(5 seconds, 5 seconds) {
     MySqlClient.statement.executeBatch()
     MySqlClient.getConnection.commit()
-  }
+  }*/
+
 }
 
 

@@ -18,4 +18,5 @@ object Boot extends App with config.Configuration{
   val service = system.actorOf(Props[ServerServiceActor],"ShoppingApi")
   implicit val time = Timeout(5)
   IO(Http) ! Http.Bind(service , serviceHost , servicePort)
+
 }

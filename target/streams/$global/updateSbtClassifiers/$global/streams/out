@@ -1782,9 +1782,9 @@
 [debug] 	[NOT REQUIRED] org.scala-sbt#test-interface;1.0!test-interface.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.13!apply-macro.jar
 [debug] 	[NOT REQUIRED] org.scala-sbt#template-resolver;0.1!template-resolver.jar
-[debug] :: resolution report :: resolve 2191ms :: artifacts dl 18ms
+[debug] :: resolution report :: resolve 763ms :: artifacts dl 13ms
 [debug] 	report for default#shoppingapi$sbt_2.10;1.0 default produced in /home/rahul/ShoppingApi/target/resolution-cache/reports/default-shoppingapi$sbt_2.10-default.xml
-[debug] 	resolve done (2191ms resolve - 18ms download)
+[debug] 	resolve done (763ms resolve - 13ms download)
 [debug] Using inline dependencies specified in Scala.
 [debug] :: resolving dependencies :: default#shoppingapi$sources_2.10;1.0
 [debug] 	confs: [default]
@@ -2489,6 +2489,6 @@
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-compiler;2.10.6!scala-compiler.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-sbt#interface;0.13.13!interface.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-sbt#logging;0.13.13!logging.jar(src)
-[debug] :: resolution report :: resolve 170ms :: artifacts dl 19ms
+[debug] :: resolution report :: resolve 119ms :: artifacts dl 15ms
 [debug] 	report for default#shoppingapi$sources_2.10;1.0 default produced in /home/rahul/ShoppingApi/target/resolution-cache/reports/default-shoppingapi$sources_2.10-default.xml
-[debug] 	resolve done (170ms resolve - 19ms download)
+[debug] 	resolve done (119ms resolve - 15ms download)
